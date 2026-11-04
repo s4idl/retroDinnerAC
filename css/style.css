@@ -884,3 +884,32 @@ button:focus-visible {
 #body .posts .section div div p.meta .tags {
 	color :#80210b;
 }
+
+/* Miniaturas del home: el contorno guinda se perdía sobre el marco guinda
+   y #body (overflow:hidden) recortaba los lados de Hotdogs y Breakfast.
+   Se dibuja hacia adentro y en verde azulado para que contraste. */
+#body .featured ul li a,
+#body .featured ul li a img {
+	display :block;
+}
+#body .featured ul li a:focus-visible {
+	outline :4px solid #1b6568;
+	outline-offset :-8px;
+}
+
+/* Páginas del menú: "Menu" es el h1 (oculto visualmente), la categoría
+   es h2 y cada platillo h3. Se conserva el mismo aspecto que antes. */
+#body .content div div h2 {
+	font-family :'Lobster1.4Regular';
+	font-size :36px;
+	color :#1b6568;
+	font-weight :normal;
+	margin :0.67em 0;
+}
+#body .content div div ul li h3 {
+	font-family :'Lobster1.4Regular';
+	font-size :24px;
+	color :#822619;
+	font-weight :normal;
+	margin :0.83em 0;
+}
