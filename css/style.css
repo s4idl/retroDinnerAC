@@ -897,8 +897,23 @@ button:focus-visible {
 	outline-offset :-8px;
 }
 
-/* Páginas del menú: "Menu" es el h1 (oculto visualmente), la categoría
-   es h2 y cada platillo h3. Se conserva el mismo aspecto que antes. */
+/* Páginas del menú: "Menu" (columna lateral) es el h1, la categoría es h2
+   y cada platillo h3. El lateral va primero en el HTML para que el h1 sea
+   el primer encabezado; con float:right se queda visualmente a la derecha. */
+#body .menu-page {
+	display :flow-root;
+}
+#body .menu-page .sidebar {
+	float :right;
+	margin-right :20px;
+}
+#body .sidebar h1 {
+	color :#1b6568;
+	font-family :'Lobster1.4Regular';
+	font-size :36px;
+	font-weight :normal;
+	margin :0.67em 0 10px 0;
+}
 #body .content div div h2 {
 	font-family :'Lobster1.4Regular';
 	font-size :36px;

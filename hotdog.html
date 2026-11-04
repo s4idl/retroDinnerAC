@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Hotdog Menu - Retro Diner</title>
-	<link href="css/style.css?v=5" rel="stylesheet" type="text/css">
+	<link href="css/style.css?v=6" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<a class="skip-link" href="#main">Skip to main content</a>
@@ -34,8 +34,28 @@
 		</div>
 	</header>
 	<div id="body">
-		<main id="main" class="content menu-page" tabindex="-1">
-			<h1 class="visually-hidden">Menu</h1>
+		<main id="main" class="menu-page" tabindex="-1">
+			<aside class="sidebar" aria-labelledby="menu-heading">
+				<h1 id="menu-heading">Menu</h1>
+				<nav aria-labelledby="menu-heading">
+					<ul class="navigation">
+						<li class="first">
+							<a href="burger.html">BURGERS</a>
+						</li>
+						<li>
+							<a class="active" href="hotdog.html" aria-current="page">HOTDOGS</a>
+						</li>
+						<li>
+							<a href="shake.html">SHAKES</a>
+						</li>
+						<li>
+							<a href="breakfast.html">BREAKFAST</a>
+						</li>
+					</ul>
+				</nav>
+				<a href="hotdog.html" class="download"><span class="visually-hidden">Download Our Menu</span></a>
+			</aside>
+			<div class="content">
 			<div>
 				<div>
 					<h2>Hotdogs</h2>
@@ -72,27 +92,8 @@
 					</ul>
 				</div>
 			</div>
+			</div>
 		</main>
-		<aside class="sidebar" aria-labelledby="menu-heading">
-			<h2 id="menu-heading">Menu</h2>
-			<nav aria-labelledby="menu-heading">
-				<ul class="navigation">
-					<li class="first">
-						<a href="burger.html">BURGERS</a>
-					</li>
-					<li>
-						<a class="active" href="hotdog.html" aria-current="page">HOTDOGS</a>
-					</li>
-					<li>
-						<a href="shake.html">SHAKES</a>
-					</li>
-					<li>
-						<a href="breakfast.html">BREAKFAST</a>
-					</li>
-				</ul>
-			</nav>
-			<a href="hotdog.html" class="download"><span class="visually-hidden">Download Our Menu</span></a>
-		</aside>
 	</div>
 	<footer id="footer">
 		<div>
